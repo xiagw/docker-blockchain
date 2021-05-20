@@ -12,10 +12,22 @@ services:
       - 30303:30303
     volumes:
       - ./geth-data:/root
-      - ./geth.conf:/etc/geth.conf
     command:
-      - "--config"
-      - "/etc/geth.conf"
+      - "--cache"
+      - "1024"
+      - "--syncmode"
+      - "fast"
+      - --networkid
+      - "1"
+      - "--maxpeers"
+      - "24"
+      - "--http"
+      - "--http.port"
+      - "8545"
+      - "--http.addr"
+      - "0.0.0.0"
+      - "--http.api"
+      - "txpool,eth,web3,admin,personal,net"
 
   ### bitcoind ################################################
   bitcoind:
