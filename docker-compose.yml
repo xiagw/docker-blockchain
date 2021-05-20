@@ -13,6 +13,9 @@ services:
     volumes:
       - ./geth-data:/root
       - ./geth.conf:/etc/geth.conf
+    command:
+      - "--config"
+      - "/etc/geth.conf"
 
   ### bitcoind ################################################
   bitcoind:
