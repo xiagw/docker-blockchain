@@ -12,6 +12,7 @@ services:
       - 30303:30303
     volumes:
       - ./geth-data:/root
+      - ./geth.conf:/etc/geth.conf
 
   ### bitcoind ################################################
   bitcoind:

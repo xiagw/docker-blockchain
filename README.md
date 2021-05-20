@@ -1,4 +1,5 @@
 # docker-blockchain
-docker for blockchain. 
+docker for blockchain.
 
-like geth, bitcoind etc.
+1. geth
+1. bitcoind
