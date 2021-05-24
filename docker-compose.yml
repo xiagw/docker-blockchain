@@ -17,7 +17,7 @@ services:
       - "1024"
       - "--syncmode"
       - "fast"
-      - --networkid
+      - "--networkid"
       - "1"
       - "--maxpeers"
       - "24"
